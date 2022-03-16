@@ -1,0 +1,5 @@
+<% if song_object.artist == nil  %>
+    <%= link_to display_artist(song), edit_song_path(song) %><br>
+<% else %>
+    <%= link_to display_artist(song), artist_path(song.artist) %><br>
+<% end %>
